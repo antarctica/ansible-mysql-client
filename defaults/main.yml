@@ -1,0 +1,9 @@
+---
+# Default variables - inventory or playbook overrides will be respected
+
+mysql_client_controller_user_password: "cacophony-234/877"
+mysql_client_app_user_password: "infamous-&34529"
+
+mysql_client_user_password:
+  controller: "{{ mysql_client_controller_user_password }}"
+  app: "{{ mysql_client_app_user_password }}"

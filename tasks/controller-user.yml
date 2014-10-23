@@ -1,0 +1,9 @@
+---
+# Configure access to mysql for controller user
+
+- name: set user to controller
+  command: "echo controller"
+  register: my_cnf_user
+
+- name: create my.cnf file for controller user
+  template: src=home/*/my.cnf.j2 dest=/home/controller/.my.cnf owner=controller group=controller mode=600
