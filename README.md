@@ -29,6 +29,10 @@ This role is designed for internal use but if useful can be shared publicly.
 
 ## Changelog
 
+### 0.2.0 - August 2014
+
+
+
 ### 0.1.1 - August 2014
 
 * Migrating role into BARC - this version should be a drop in replacement for any previous versions of this role
