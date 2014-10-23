@@ -6,3 +6,6 @@
   with_items:
     - mysql-client
     - python-mysqldb
+
+- include: controller-user.yml
+- include: app-user.yml

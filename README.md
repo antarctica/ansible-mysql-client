@@ -2,10 +2,12 @@
 
 **Part of the BAS Ansible Role Collection (BARC)**
 
-Installs MySQL database client
+Installs MySQL database client and configures password files for users
+
 ## Overview
 
 * Installs MySQL client package with python bindings required by ansible.
+* Configures `.my.cnf` files for *app* and *controller* users to prevent password prompting.
 
 ## Author
 
@@ -27,7 +29,26 @@ This role is designed for internal use but if useful can be shared publicly.
 
 * `core`
 
+## Variables
+
+* `mysql_server_controller_user_password`
+    * Default password for controller user.
+    * Default: "cacophony-234/877"
+* `mysql_server_app_user_password`
+    * Default password for app user.
+    * Default: "infamous-&34529"
+* `mysql_client_user_password`
+    * Passwords for users for use in `.my.cnf` files to provide default mysql login credentials.
+    * Structured as an array of users and passwords (key, value) respectively
+    * Default (array)
+        * controller: "{{ mysql_server_controller_user_password }}"
+        * app: "{{ mysql_server_app_user_password }}"
+
 ## Changelog
+
+### 0.2.0 - August 2014
+
+* Adding user connection files for streamlining database access from the command line
 
 ### 0.1.1 - August 2014
 
