@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  description: Installs MySQL database client
+  description: Installs MySQL database client and configures password files for users
   author: British Antarctic Survey - Web and Applications Team
   company: British Antarctic Survey
   license: Open Government Licence V2

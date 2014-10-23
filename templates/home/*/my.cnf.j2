@@ -1,0 +1,5 @@
+# {{ ansible_managed }}
+
+[client]
+user = {{ my_cnf_user.stdout_lines.0 }}
+password = {{ mysql_client_user_password[my_cnf_user.stdout_lines.0] }}
