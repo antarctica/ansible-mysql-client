@@ -31,7 +31,6 @@ This role is designed for internal use but if useful can be shared publicly.
 
 ## Variables
 
-* `mysql_server_controller_user_password`
 * `mysql_client_controller_user_username`
     * The username of the controller user, used for management tasks, if enabled
     * This variable **must** be a valid unix username
@@ -40,9 +39,10 @@ This role is designed for internal use but if useful can be shared publicly.
     * The username of the app user, used for day to day tasks, if enabled
     * This variable **must** be a valid unix username
     * Default: "app"
+* `mysql_client_controller_user_password`
     * Default password for controller user.
     * Default: "cacophony-234/877"
-* `mysql_server_app_user_password`
+* `mysql_client_app_user_password`
     * Default password for app user.
     * Default: "infamous-&34529"
 * `mysql_client_user_password`
@@ -59,6 +59,7 @@ This role is designed for internal use but if useful can be shared publicly.
 * Including in BARC
 * Updating dependencies
 * App and controller user usernames now configurable using variables
+* Fixing variable documentation
 
 ### 0.2.0 - August 2014
 
