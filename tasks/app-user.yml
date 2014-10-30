@@ -1,9 +1,9 @@
 ---
 # Configure access to mysql for app user
 
-- name: set user to app
-  command: "echo app"
+- name: set user to app user
+  command: "echo {{ mysql_client_app_user_username }}"
   register: my_cnf_user
 
 - name: create my.cnf file for app user
-  template: src=home/*/my.cnf.j2 dest=/home/app/.my.cnf owner=app group=app mode=600
+  template: src=home/*/my.cnf.j2 dest="/home/{{ mysql_client_app_user_username }}/.my.cnf" owner="{{ mysql_client_app_user_username }}" group="{{ mysql_client_app_user_username }}" mode=600
