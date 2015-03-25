@@ -1,5 +1,9 @@
 # MySQL Client (`mysql-client`) - Changelog
 
+## 0.2.3 - March 2015
+
+* Fixing tasks to prevent unnecessary change reporting
+
 ## 0.2.2 - December 2014
 
 * Preparing role for public release
