@@ -4,6 +4,7 @@
 - name: set user to controller user
   command: "echo {{ mysql_client_controller_user_username }}"
   register: my_cnf_user
+  changed_when: False
 
 - name: create my.cnf file for controller user
   template: src=home/*/my.cnf.j2 dest="/home/{{ mysql_client_controller_user_username }}/.my.cnf" owner="{{ mysql_client_controller_user_username }}" group="{{ mysql_client_controller_user_username }}" mode=600
