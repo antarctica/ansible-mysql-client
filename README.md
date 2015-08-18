@@ -27,16 +27,16 @@ This role is designed for internal use but if useful can be shared publicly.
     * The username of the controller user, used for management tasks, if enabled
     * This variable **must** be a valid unix username
     * Default: "controller"
+* `mysql_client_controller_user_password`
+    * Default password for controller user
+    * Default: "password"
 * `mysql_client_app_user_username`
     * The username of the app user, used for day to day tasks, if enabled
     * This variable **must** be a valid unix username
     * Default: "app"
-* `mysql_client_controller_user_password`
-    * Default password for controller user.
-    * Default: "cacophony-234/877"
 * `mysql_client_app_user_password`
-    * Default password for app user.
-    * Default: "infamous-&34529"
+    * Default password for app user
+    * Default: "password"
 * `mysql_client_user_password`
     * Passwords for users for use in `.my.cnf` files to provide default mysql login credentials.
     * Structured as an array of users and passwords (key, value) respectively
