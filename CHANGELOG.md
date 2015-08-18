@@ -1,5 +1,10 @@
 # MySQL Client (`mysql-client`) - Changelog
 
+## 0.3.0 - August 2015
+
+* Updating default password variables for consistency to highlight they should be changed
+* Minor README tidying
+
 ## 0.2.3 - March 2015
 
 * Fixing tasks to prevent unnecessary change reporting
