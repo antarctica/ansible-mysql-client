@@ -6,7 +6,7 @@ Installs MySQL database client and configures password files for users
 
 ## Overview
 
-* Installs MySQL client package with python bindings required by ansible.
+* Installs MySQL client package with python bindings required by Ansible.
 * Configures `.my.cnf` files for *app* and *controller* users to prevent password prompting.
 
 ## Availability
@@ -25,20 +25,20 @@ This role is designed for internal use but if useful can be shared publicly.
 
 * `mysql_client_controller_user_username`
     * The username of the controller user, used for management tasks, if enabled
-    * This variable **must** be a valid unix username
+    * This variable **MUST** be a valid UNIX username
     * Default: "controller"
 * `mysql_client_controller_user_password`
     * Default password for controller user
     * Default: "password"
 * `mysql_client_app_user_username`
     * The username of the app user, used for day to day tasks, if enabled
-    * This variable **must** be a valid unix username
+    * This variable **MUST** be a valid UNIX username
     * Default: "app"
 * `mysql_client_app_user_password`
     * Default password for app user
     * Default: "password"
 * `mysql_client_user_password`
-    * Passwords for users for use in `.my.cnf` files to provide default mysql login credentials.
+    * Passwords for users for use in `.my.cnf` files to provide default MySQL login credentials.
     * Structured as an array of users and passwords (key, value) respectively
     * Default (array)
         * controller: "{{ mysql_server_controller_user_password }}"
@@ -52,7 +52,7 @@ This project welcomes contributions, see `CONTRIBUTING` for our general policy.
 
 ### Committing changes
 
-The [Git flow](https://github.com/fzaninotto/Faker#formatters) workflow is used to manage development of this package.
+The [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow is used to manage development of this package.
 
 Discrete changes should be made within *feature* branches, created from and merged back into *develop* (where small one-line changes may be made directly).
 
